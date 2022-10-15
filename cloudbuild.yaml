@@ -1,0 +1,5 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: [ 'build', '-f', 'lab03/Dockerfile', '-t', 'asia-northeast1-docker.pkg.dev/$PROJECT_ID/legendary-octo-potato/nodejs:latest', 'lab03' ]
+images:
+- 'asia-northeast1-docker.pkg.dev/$PROJECT_ID/legendary-octo-potato/nodejs:latest'
